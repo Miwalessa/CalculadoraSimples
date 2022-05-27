@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81757373"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/valor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/valor1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:numeric="decimal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/valor2"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:numeric="decimal" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSoma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/somar" />
+
+        <Button
+            android:id="@+id/btnSubtrai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtrair" />
+
+        <Button
+            android:id="@+id/btnMultiplica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplicar" />
+
+        <Button
+            android:id="@+id/btnDividi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dividir" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
